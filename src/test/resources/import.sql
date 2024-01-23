@@ -1,0 +1,2 @@
+INSERT INTO note (title, content, author, important, tags, created_at) VALUES (1,'Nota 1', 'Contenido de la nota 1', '12345678-1234-5678-1234-567812345678', true,1, TIMESTAMP('11/28/2023'));
+INSERT INTO note_tags(note_id,tags) VALUES (1,'Aventura')
