@@ -39,6 +39,8 @@ class NoteRepositoryTest {
 
         List<Note> result = repository.findByAuthor("12345678-1234-5678-1234-567812345678");
 
-        Assertions.assertEquals(1,result.size());
+        Assertions.assertEquals(2,result.size());
+        Assertions.assertEquals("Contenido de la nota 1",result.get(0).getContent());
+        Assertions.assertNotNull(result.get(1));
     }
 }
